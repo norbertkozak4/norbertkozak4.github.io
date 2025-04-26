@@ -1,1 +1,38 @@
-<a href="=/secondpage">Secondpage</a>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Egyszerű Weboldal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <button onclick="showSection('home')">Homepage</button>
+      <button onclick="showSection('about')">About Us</button>
+      <button onclick="showSection('contact')">Contact</button>
+      <button onclick="showSection('career')">Career</button>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h1>Welcome to our website!</h1>
+      <p>Ez a kezdőlap tartalma.</p>
+    </section>
+    <section id="about" hidden>
+      <h1>About Us</h1>
+      <p>Rólunk szóló információk.</p>
+    </section>
+    <section id="contact" hidden>
+      <h1>Contact</h1>
+      <p>Kapcsolatfelvétel: email@example.com</p>
+    </section>
+    <section id="career" hidden>
+      <h1>Career</h1>
+      <p>Karrier lehetőségek nálunk.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
